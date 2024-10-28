@@ -1,0 +1,11 @@
+launch:
+
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/lidar.launch.yaml"
+- include:
+    file: "$(find-pkg-share my_first_package)/launch/webcam.launch.yaml"
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/base.launch.py"
+- include:
+    file: "$(find-pkg-share robot_bringup)/launch/turtlebot3_tf.launch.yaml"
+    
