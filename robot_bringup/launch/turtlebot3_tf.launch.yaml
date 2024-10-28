@@ -4,4 +4,4 @@ launch:
     pkg: "tf2_ros"
     exec: "static_transform_publisher"
     name: "parent_to_child_tf"
-    args: '0.0 0.0 0.25 3.14159 0.0 0.0 my_parent_frame my_child_frame'
+    args: '0.0 0.0 0.25 3.14159 0.0 0.0 odom_frame to base_frame'
