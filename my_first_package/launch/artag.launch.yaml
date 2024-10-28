@@ -1,0 +1,24 @@
+launch:
+
+- node:
+    pkg: "apriltag_ros"
+    exec: "apriltag_node"
+    name: "apriltag_node"
+    param:
+    -
+      name: "size"
+      value: 0.11
+    -
+      name: "family"
+      value: "Standard41h12"
+    -
+      name: "image_raw"
+      value: "raw"
+
+    remap:
+    -
+      from: "/image_rect"
+      to: "/image_raw"
+    -
+      from: "/camera_info"
+      to: "/camera_info"

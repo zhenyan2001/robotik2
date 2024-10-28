@@ -1,0 +1,11 @@
+launch:
+
+- include:
+    file: "$(find-pkg-share my_first_package)/launch/artag.launch.yaml"
+- include:
+    file: "$(find-pkg-share my_first_package)/launch/webcam.launch.yaml"
+- include:
+    file: "$(find-pkg-share rplidar_ros)/launch/rplidar_a1_launch.py"
+- include:
+    file: "$(find-pkg-share my_first_package)/launch/statictransformation.launch.py"
+    
